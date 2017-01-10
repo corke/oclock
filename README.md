@@ -1,6 +1,8 @@
 # Oclock Folder
 
-Hey you, welcome. Here you can find a lot of my works/homeworks created during O'clock  studies.
+Hey you, welcome!
+
+Here you can find a lot of my works/homeworks created during O'clock  studies.
 
 More information about Oclock :
 https://oclock.io
