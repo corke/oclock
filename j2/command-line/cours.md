@@ -16,7 +16,7 @@ Le **shell script** (ou le language que vous utilisez dans le terminal) est un l
 
 Par exemple `pwd` est une commande, alors que `PWD ou Pwd ou pWD...` n'est pas une commande (n'existe pas).
 
-### La tilde `~` ou /home/mint
+### La tilde `~`
 Dans le terminal, la tilde représente le répertoire HOME de l'utilisateur (vous). Ce répertoire est celui dans lequel vous trouvez (la plupart du temps) les dossiers suivants  :
 - Bureau
 - Documents
@@ -76,8 +76,11 @@ Pour revenir dans le dossier parent tapez `cd ../`
 
 Dans chaque dossier, vous avez `.` qui représente le dossier dans lequel vous êtes, et `..` qui représent le dossier parent.
 
+---
+## Créez, copiez, et déplacez des fichiers.
 
-### `mkdir` - Créer un dossier
+### `mkdir` - Aller hop, un nouveau dossier !
+
 Pour créer un dossier, utilisez la commande `mkdir`
 ```shell
 mint@mint ~ $ mkdir nouveauDossier/
@@ -92,6 +95,59 @@ mint@mint ~ $ mkdir dossierExistant/nouveauDossier/
 
 Vous constatez que mkdir ne se limite pas au dossier actuel, vous pouvez aussi créer des dossiers via mkdir `chemin/nouveauDossier`
 
+
+### `rmdir` - Mais il est vide ce dossier ? Aller hop, poubelle !
+
+Cette commande sert à supprimer une dossier **vide**.
+Son fonctionnement est le même que mkdir :
+```shell
+mint@mint ~ $ mkdir dossierASupprimer/
+mint@mint ~ $ mkdir ../dossierASupprimer/
+mint@mint ~ $ mkdir dossierExistant/dossierASupprimer/
+```
+
+### `touch` - Un nouveau fichier ?
+Cette commande sert à créer un nouveau fichier.
+Fonctionnement classique :
+
+```shell
+mint@mint ~ $ touch monfichier.extension
+mint@mint ~ $ mkdir ../dossierExistant/monfichier.extension
+mint@mint ~ $ mkdir dossierExistant/monfichier.extension
+```
+
+### `rm` - Supprimez un fichier ou un dossier qui ne vous plait pas.
+Cette commande sert à supprimer un fichier, où un dossier plein (contrairement à `rmdir` qui ne peut supprimer que des dossiers vide).
+```shell
+mint@mint ~ $ rm monfichier.extension
+```
+Supprime un fichier
+
+```shell
+mint@mint ~ $ rm -rf mondossier/
+```
+Fait une suppression récursif. En gros retenez que c'est avec cette commande que vous pouvez supprimer un dossier contenant d'autres dossiers/fichiers. **A utiliser avec prudence**
+
+### `mv` - Déplacer ou renommer ? Vous choississez.
+Cette commande permet de déplacer ou de renommer un fichier, en fonction de la façon dont vous l'utilisez.
+
+Mettons que vous êtes dans le dossier courant `~`. Dedans vous avez :
+- Documents
+- Images
+- Vidéos
+- test
+
+Pour déplacer `test` dans `Documents`
+```shell
+mint@mint ~ $ mv test Documents
+```
+
+Pour renommer `test` en `supertest`
+```shell
+mint@mint ~ $ mv test supertest
+```
+
+### `cp` - Copiez tout.
 
 --------------------
 ### L'autocompletion
