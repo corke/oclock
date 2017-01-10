@@ -5,7 +5,6 @@ Fait par Guillaume L.
 Si vous avez des questions : `guillaume.lodi@gmail.com`.
 
 ## Avant de commencer
-
 ### Ouverture d'un terminal
 Plusieurs options possibles :
 - En bas a gauche du menu mint, cliquer sur l'icone du terminal
@@ -27,12 +26,15 @@ Dans le terminal, la tilde représente le répertoire HOME de l'utilisateur (vou
 - Musique
 - Téléchargements
 
+### L'autocompletion
+Très utile. Les développeurs sont des flemmards, c'est pour ça qu'ils ont mis en place l'autocomplétion.
+Le principe c'est d'appuyez sur la touche `tabulation` pendant la saisie, et l'ordinateur va compléter tout seul votre saisie **si il peut**.
+
 
 --------------------
 ## C'est parti ! Les commandes basiques : naviguez dans vos fichiers à l'aide du terminal.
 
 D'habitude, on utilise un explorateur de fichier, et on clique sur les dossiers pour les ouvrir (ou sur les fichiers). Saviez-vous qu'il était possible d'y naviguer à partir d'un terminal ? Le tout en utilisant seulement trois commandes : `pwd`, `cd` et `ls`.
-
 
 ### `pwd` - Heu je suis où là ?
 Première commande. Cette commande est extrèmement utilse si vous êtes perdu, elle sert à afficher le dossier dans lequel vous vous trouvez acutuellement.
@@ -45,7 +47,6 @@ mint@mint ~ $ pwd
 `pwd` veut dire "print working directorie" et sert à afficher le répertoire courant.
 Dans notre cas, le répertoire courant lors de l'ouverture du terminal est `/home/mint`.
 
-
 ### `ls` - Un peu de lumière svp !
 Cette commande sert à afficher la liste des fichier du répertoire courant.
 Tapez `ls` dans le terminal et appuyez sur entrée.
@@ -54,7 +55,6 @@ mint@mint ~ $ ls
 Bureau   Documents  Modèles  Public           Vidéos
 Desktop  Images     Musique  Téléchargements
 ```
-
 
 ### `cd` - C'est naze ici, je me casse !
 
@@ -78,7 +78,6 @@ Dans chaque dossier, vous avez `.` qui représente le dossier dans lequel vous �
 
 ---
 ## Créez, copiez, et déplacez des fichiers.
-
 ### `mkdir` - Aller hop, un nouveau dossier !
 
 Pour créer un dossier, utilisez la commande `mkdir`
@@ -94,7 +93,6 @@ mint@mint ~ $ mkdir dossierExistant/nouveauDossier/
 ```
 
 Vous constatez que mkdir ne se limite pas au dossier actuel, vous pouvez aussi créer des dossiers via mkdir `chemin/nouveauDossier`
-
 
 ### `rmdir` - Mais il est vide ce dossier ? Aller hop, poubelle !
 
@@ -149,8 +147,3 @@ mint@mint ~ $ mv test supertest
 
 ### `cp` - Copiez tout.
 En cours
-
---------------------
-### L'autocompletion
-Très utile. Les développeurs sont des flemmards, c'est pour ça qu'ils ont mis en place l'autocomplétion.
-Le principe c'est d'appuyez sur la touche `tabulation` pendant la saisie, et l'ordinateur va compléter tout seul votre saisie **si il peut**.
