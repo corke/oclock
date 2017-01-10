@@ -148,6 +148,7 @@ mint@mint ~ $ mv test supertest
 ```
 
 ### `cp` - Copiez tout.
+En cours
 
 --------------------
 ### L'autocompletion
